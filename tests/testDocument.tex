@@ -1,0 +1,64 @@
+\documentclass{article}
+\usepackage[absolute,overlay]{textpos}
+\pagenumbering{gobble}
+\TPGrid[0mm,0mm]{892}{1262}
+
+\begin{document}
+\begin{textblock}{148}(0,0)
+\noindent
+TOP LEFT CORNER
+\end{textblock}
+
+The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.
+
+Another line
+
+\vspace{10 mm}
+\begin{tabular}{l*{6}{c}r}
+Team              & P & W & D & L & F  &   & Pts \\
+\hline
+Manchester United & 6 & 4 & 0 & 2 & 10 & 5 & 12  \\
+Celtic            & 6 & 3 & 0 & 3 &  8 & 9 &  9  \\
+Benfica           & 6 & 2 & 1 & 3 &  7 & 8 &  7  \\
+FC Copenhagen     & 6 & 2 & 1 & 3 &  5 & 8 &  7  \\
+\end{tabular}
+
+\vspace{10 mm}
+\begin{table}[h]
+\begin{tabular}{lllll}
+\multicolumn{2}{l}{First column}      & Second column      & Third column &  \\
+Text              & \multicolumn{2}{l}{Spanning long text} & Another text &  \\
+                  &                   &                    &              &  \\
+                  &                   &                    &              & 
+\end{tabular}
+\end{table}
+
+\begin{textblock}{148}(120,570)
+\noindent
+MULTIPLE LABELS
+\end{textblock}
+
+\begin{textblock}{148}(100,550)
+\noindent
+MULTIPLE LABELS
+\end{textblock}
+
+\begin{textblock}{148}(140,590)
+\noindent
+MULTIPLE LABELS
+\end{textblock}
+
+\vspace{10 mm}
+\begin{table}[h]
+\begin{tabular}{lllll}
+Value above &             &              &  &  \\
+Field name: & First value & Second value &  &  \\
+Value below &             &              &  & 
+\end{tabular}
+\end{table}
+
+\begin{textblock}{195}(677,1327)
+\noindent
+BOTTOM RIGHT CORNER
+\end{textblock}
+\end{document}

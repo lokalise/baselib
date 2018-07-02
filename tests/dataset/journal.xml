@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="test_foundation_kate">
+	<table_structure name="testlog">
+		<field Field="id" Type="int(11)" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="client" Type="text" Null="NO" Key="MUL" Extra="" Comment="" />
+		<field Field="date" Type="datetime" Null="NO" Key="MUL" Extra="" Comment="" />
+		<field Field="typeOfRecord" Type="enum('testTypeOfRecord1','testTypeOfRecord2')" Null="NO" Key="MUL" Extra="" Comment="" />
+		<field Field="record" Type="longtext" Null="NO" Key="" Extra="" Comment="" />
+		<key Table="testlog" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="0" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="testlog" Non_unique="1" Key_name="client" Seq_in_index="1" Column_name="client" Collation="A" Cardinality="0" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="testlog" Non_unique="1" Key_name="date" Seq_in_index="1" Column_name="date" Collation="A" Cardinality="0" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="testlog" Non_unique="1" Key_name="typeOfRecord" Seq_in_index="1" Column_name="typeOfRecord" Collation="A" Cardinality="0" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="testlog" Engine="InnoDB" Version="10" Row_format="Compact" Rows="0" Avg_row_length="0" Data_length="16384" Max_data_length="0" Index_length="49152" Data_free="0" Auto_increment="1" Create_time="2015-08-26 09:22:23" Collation="utf8_general_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="testlog">
+	<row>
+		<field name="id">1</field>
+		<field name="client">testClient</field>
+		<field name="date">2015-08-21 04:19:16</field>
+		<field name="typeOfRecord">testTypeOfRecord1</field>
+		<field name="record">test record</field>
+	</row>
+	<row>
+		<field name="id">2</field>
+		<field name="client">testClient</field>
+		<field name="date">2015-07-21 04:19:16</field>
+		<field name="typeOfRecord">testTypeOfRecord1</field>
+		<field name="record">test record</field>
+	</row>
+	<row>
+		<field name="id">3</field>
+		<field name="client">testClient3</field>
+		<field name="date">2015-06-21 04:19:16</field>
+		<field name="typeOfRecord">testTypeOfRecord1</field>
+		<field name="record">test record</field>
+	</row>
+	<row>
+		<field name="id">4</field>
+		<field name="client">testClient4</field>
+		<field name="date">2015-08-20 04:19:16</field>
+		<field name="typeOfRecord">testTypeOfRecord2</field>
+		<field name="record">test record</field>
+	</row>
+	<row>
+		<field name="id">5</field>
+		<field name="client">testClient4</field>
+		<field name="date">2015-08-18 04:19:16</field>
+		<field name="typeOfRecord">testTypeOfRecord2</field>
+		<field name="record">test record</field>
+	</row>
+	</table_data>
+</database>
+</mysqldump>

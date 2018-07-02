@@ -1,0 +1,4 @@
+<?xml version="1.0" ?>
+<dataset>
+    <Log Type="512" Message="Testing shutdownHandler"/>
+</dataset>
